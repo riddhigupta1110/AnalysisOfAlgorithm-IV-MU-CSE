@@ -1,6 +1,3 @@
-/*Riddhi Gupta
-SE CMPN B - B1
-Roll no - 05*/
 import java.util.*;
 class Dijkstra_SSSP{
     static void initialiseSingleSource(int dist[], int path[], int src){
