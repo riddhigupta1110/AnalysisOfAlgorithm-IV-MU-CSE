@@ -1,7 +1,7 @@
 //Riddhi Gupta - SE CMPN B B1 - 05
 import java.util.*;
-public class RobinKarp {
-    static void robinKarp(char T[], char P[], int d, int q){
+public class RabinKarp {
+    static void rabinKarp(char T[], char P[], int d, int q){
         int n = T.length;
         int m = P.length;
         int h = ((int)Math.pow(d, m-1))%q;
@@ -33,7 +33,7 @@ public class RobinKarp {
         }
         System.out.println("Spurious Hit: "+ spuriousHit);
     }
-    static void robinKarpCaller(){
+    static void rabinKarpCaller(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter text: ");
         String strT = sc.next();
@@ -45,9 +45,9 @@ public class RobinKarp {
         int d = sc.nextInt();
         System.out.println("Enter prime: ");
         int q = sc.nextInt();
-        robinKarp(T, P, d, q);
+        rabinKarp(T, P, d, q);
     }
     public static void main(String[] args) {
-        robinKarpCaller();
+        rabinKarpCaller();
     }
 }
